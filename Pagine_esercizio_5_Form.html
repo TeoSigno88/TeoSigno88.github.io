@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta>
+    ="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Esercizio_5_Form</title>
+</head>
+<body>
+
+<!--
+Le liste sono di 3 tipi, la lista non ordinata <ul>>, la lista ordinata <ol> e la lista desrittiva <dl>
+-->
+<h1>Form di contatto</h1>
+<br>
+
+<table border="0">
+
+    <!--    il form consente di specificare CHI e COME. Il metodo è "come", espresso con GET (di default) oppure POST
+    - POST si utilizza quando si vuole inviare dati al server (come la registrazione di un utente) invia i dati nell'URL
+    - GET si utilizza quando si vuole interrogare il server (come chiedere i dati di un utente registrato), si trovano
+    nel body della richiesta. Tuttavia è possibile anche fare la stessa cosa con GET che quindi è di default
+    -->
+
+    <!--  La actione è "chi" -->
+    <!--https://www.postb.in/ è un servizio che permette di simulare cià che riceve il server-->
+
+    <form action="https://www.postb.in/1665157118852-6818727315403" autocomplete="on" id="test" method="get">
+        <tr>
+            <th align="left"><strong>Campo</strong></th>
+            <th align="left"><strong>Imput</strong></th>
+        </tr>
+
+        <tr>
+            <td><label for="nome">Nome*</label></td>
+            <td><input id="nome" name="name" placeholder="scrivi il nome" required type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label for="address">Cognome*</label></td>
+            <td><input id="cognome" name="name" placeholder="scrivi il cognome" required type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label for="address">Indirizzo</label></td>
+            <td><input id="address" name="address" placeholder="scrivi l'indirizzo" type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label for="number">Civico*</label></td>
+            <td><input id="number" name="number" placeholder="scrivi il numero civico" required type="number"></td>
+        </tr>
+
+        <tr>
+            <td><label for="cap">CAP*</label></td>
+            <td><input id="cap" name="zc" placeholder="scrivi il CAP" required type="number"></td>
+        </tr>
+
+        <tr>
+            <td><label for="city">Citta*'</label></td>
+            <td><input id="city" name="city" placeholder="scrivi la citta'" required type="text"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <lable for="country">Nazione*</lable>
+            </td>
+            <td><input id="country" name="country" placeholder="scrvi la nazione" required type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label for="province">Provincia</label></td>
+            <td><select id="province">Provincia
+                <option value="MI">Milano</option>
+                <option value="RM">Roma</option>
+                <option value="TO">Torino</option>
+                <option value="BO">Bologna</option>
+                <option value="" selected></option>
+            </select></td>
+        </tr>
+
+        <tr>
+
+            <td><label for="phone">Telefono</label></td>
+            <td><input id="phone" name="phone" placeholder="scrivi il telefono" type="tel"></td>
+
+        </tr>
+
+        <tr>
+            <td><label for="email">Email*</label></td>
+            <td><input id="email" name="email" placeholder="scrivi la mail" required type="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="note">Note</label></td>
+            <td><input id="note" name="note" placeholder="note" type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="invia"></td>
+        </tr>
+
+    </form>
+</table>
+
+<button type="reset" form="test">Reset</button>
+
+</body>
+</html>
+
+
+<!--
+multi column select: shift+alt+ins
+edentatore: ctrl+alt+l
+spostare un testo in verticale: alt+shift
+andare ad inizio e fine frase: freccia laterale e fine
+spostarsi da parola in parola: ctrl+freccia
+CRTL + / crea il commento
+-->
